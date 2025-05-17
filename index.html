@@ -163,6 +163,82 @@
 </section>
 <!-- End paper abstract -->
 
+<section class="section hero is-light" id="Contribution">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Contributions</h2>
+        <div class="content has-text-justified">
+          <p>
+            <!-- To summarize, our contributions are as follows: -->
+          <ul>
+            <li>We introduce RoboGround, a grounding-aware robot policy that seamlessly incorporates grounded vision-language priors into the policy network, enabling robust generalization to diverse instructions, unseen objects, and novel categories.</li>
+            <li>We develop a large-scale, automatically generated simulation dataset aimed at enhancing instruction diversity. This dataset captures a wide range of object appearances, spatial relationships, and commonsense knowledge, enriching the model's ability to interpret and execute varied task instructions.</li>
+            <li>Extensive experiments demonstrate the effectiveness of our dataset and the use of grounding masks as intermediate guidance, which significantly improves the generalization capability of robot policies.</li>
+          </ul>
+          </p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section hero is-light" id="Data">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Data</h2>
+        <div class="content has-text-justified">
+          <p>
+            The pipeline is composed of three key stages: (a) First, we extract informative object attributes in both keyword and descriptive phrase formats; (b) Next, appearance-based instructions are generated using these attributes, where keywords filter objects and descriptive phrases calculate appearance similarity; (c) Finally, spatial and commonsense instructions are generated through rule-based methods and GPT-generated techniques, respectively.
+          </p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <img src="static/images/data.png" width="80%" alt="Data Generation Pipeline" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section hero is-light" id="Method">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <p>
+            To enhance policy generalization, we leverage grounding masks as intermediate representations for spatial guidance. Specifically, (a) The grounded vision-language model processes the instruction and image observation to generate target masks. (b) The grounded policy network integrates mask guidance by concatenating masks with the image input and directing attention within the grounded perceiver.
+          </p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <img src="static/images/method.png" width="80%" alt="Data Generation Pipeline" />
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!-- Image carousel -->
 <!-- <section class="hero is-small">
